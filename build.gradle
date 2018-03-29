@@ -10,7 +10,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.0'
-        //classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        // To enable multi-module jitpack. See https://android.jlelse.eu/publish-multi-module-android-libraries-on-jitpack-339213f6224c
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
 
 
