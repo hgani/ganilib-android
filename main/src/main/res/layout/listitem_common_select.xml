@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <CheckBox android:id="@+id/toggle_select"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_marginTop="@dimen/padding_micro"
+      android:layout_marginRight="@dimen/padding_medium"
+      android:focusable="false" />
+
+  <!-- Attach to the left of check box to ensure that the label's width doesn't exceed the available space and thus
+       overlap with the checkbox -->
+  <TextView
+      android:id="@+id/label_message"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@id/toggle_select"
+      android:layout_marginLeft="@dimen/padding_large"
+      android:layout_marginTop="@dimen/padding_small"
+      android:layout_marginBottom="@dimen/padding_small" />
+
+</RelativeLayout>

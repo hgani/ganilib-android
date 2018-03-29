@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+      android:id="@+id/ic_navigation"
+      android:gravity="center"
+      android:drawable="@drawable/icon_notification_logo"/>
+
+  <!-- set a place holder Drawable so android:drawable isn't null while rendering-->
+  <item
+      android:id="@+id/ic_badge"
+      android:gravity="right"
+      android:drawable="@drawable/icon_notification_logo"/>
+</layer-list>
