@@ -5,7 +5,6 @@ group='com.github.hgani.ganilib-android'
 
 android {
     compileSdkVersion 26
-//    buildToolsVersion "27.0.2"
 
     defaultConfig {
         minSdkVersion 15
