@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Test Library</string>
+  <string name="app_name">GaniLib</string>
+
+  <string name="title_progress">Please Wait</string>
 </resources>

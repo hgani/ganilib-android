@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <item name="layout_refresh" type="id"/>
+
+  <item type="id" name="listitem_normal" />
+  <item type="id" name="listitem_header" />
+  <item type="id" name="listitem_footer" />
+  <item type="id" name="listitem_section_header" />
+</resources>

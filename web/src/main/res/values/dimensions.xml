@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_nano">2dp</dimen>
+    <dimen name="padding_micro">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_large_double">32dp</dimen>
+
+    <!--
+    <dimen name="text_midget">10dp</dimen>
+    <dimen name="text_micro">12dp</dimen>
+    <dimen name="text_small">14dp</dimen>
+    <dimen name="text_medium">16dp</dimen>
+    <dimen name="text_large">18dp</dimen>
+    -->
+
+    <!-- This has to be large enough so that it can be reliably tapped -->
+    <!--
+    <dimen name="fonticon_button">40dp</dimen>
+
+    <dimen name="text_spinner_title">16dp</dimen>
+    <dimen name="text_spinner_subtitle">14dp</dimen>
+
+    <dimen name="minheight_link">32dp</dimen>
+    <dimen name="minheight_listitem">48dp</dimen>
+    <dimen name="minheight_button">48dp</dimen>
+
+    <dimen name="layout_max_width">400dp</dimen>
+    <dimen name="layout_short_text_width">200dp</dimen>
+
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="corner_radius_zero">0dp</dimen>
+    <dimen name="tab_space_top">4dp</dimen>
+    <dimen name="tab_space">0dp</dimen>
+    <dimen name="tab_space_plus1">3dp</dimen>
+    <dimen name="tab_space_bottom_line">36sp</dimen>
+    <dimen name="tab_space_unselected_top">6sp</dimen>
+
+    <dimen name="image_border">0dp</dimen>
+
+    <dimen name="entity_icon_size">48dp</dimen>
+    <dimen name="nav_drawer_header_height">180dp</dimen>
+    -->
+</resources>
