@@ -41,6 +41,5 @@ dependencies {
     compile 'com.github.jrvansuita:PickImage:+'
     compile 'com.basecamp:turbolinks:1.0.7'
 
-    // For some reason jitpack doesn't work if we name the core library as `core`
-    compile project(':common')
+    compile project(':ganilib-core')
 }

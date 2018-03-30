@@ -1,1 +1,1 @@
-include ':common', ':web'
+include ':ganilib-core', ':web'
