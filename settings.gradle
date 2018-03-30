@@ -1,1 +1,1 @@
-include ':main', ':web'
+include ':common', ':web'
