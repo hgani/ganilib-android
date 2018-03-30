@@ -41,5 +41,5 @@ dependencies {
 //    compile 'com.github.jrvansuita:PickImage:+'
     compile 'com.basecamp:turbolinks:1.0.7'
 
-//    compile project(':main')
+    compile project(':main')
 }
