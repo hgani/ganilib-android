@@ -1,0 +1,3 @@
+<resources>
+  <!-- NOTE: Styles specified here seem to override the ones on ganilib, so only declare a style here if it is absolutely necessary -->
+</resources>
