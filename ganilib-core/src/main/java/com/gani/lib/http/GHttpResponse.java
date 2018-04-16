@@ -13,10 +13,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
 import java.net.HttpURLConnection;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class GHttpResponse<RR extends GRestResponse> implements Serializable {
   private static final long serialVersionUID = 1L;
-  
+
+  private Set<Map.Entry<String, List<String>>> headers;
   private byte[] binary;
   private String string;
   private RR restReponse;
@@ -82,6 +86,8 @@ public class GHttpResponse<RR extends GRestResponse> implements Serializable {
     int code = connection.getResponseCode();
     setCode(code);
 
+    this.headers = connection.getHeaderFields().entrySet();
+
     // Redirection (e.g. 300) should have been handled prior, so we consider anything below 300 a "success".
     if (code > 300) {
       GLog.t(getClass(), "HTTP Code: " + code);
@@ -111,7 +117,11 @@ public class GHttpResponse<RR extends GRestResponse> implements Serializable {
     GLog.i(getClass(), "[" + code + "]: " + string);
   }
 
-//  void handle(GHttpCallback callback) {
+  public Set<Map.Entry<String, List<String>>> getHeaders() {
+    return headers;
+  }
+
+  //  void handle(GHttpCallback callback) {
 //    if (error.hasError()) {
 //      callback.onHttpFailure(error);
 //      if (!displayMessage()) {
