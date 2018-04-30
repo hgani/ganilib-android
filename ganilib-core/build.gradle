@@ -23,11 +23,6 @@ android {
     }
 }
 
-//dependencies {
-//
-//}
-
-
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
