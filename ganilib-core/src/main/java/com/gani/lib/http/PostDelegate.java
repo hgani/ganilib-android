@@ -26,9 +26,11 @@ final class PostDelegate extends HttpDelegate {
     HttpURLConnection connection = GHttp.instance().openConnection(getFullUrl(), params, method);
     connection.setDoOutput(true);
 
-    byte[] data = GHttp.instance().processParams(params, method)
-        .toMutable().put("_method", getMethod()).toImmutable()
-        .asQueryString().getBytes("UTF-8");
+    GParams mutableParams = GHttp.instance().processParams(params, method).toMutable();
+    if (mutableParams.get("_method") == null) {
+      mutableParams.put("_method", getMethod());
+    }
+    byte[] data = mutableParams.toImmutable().asQueryString().getBytes("UTF-8");
     connection.getOutputStream().write(data);
     return connection;
   }
