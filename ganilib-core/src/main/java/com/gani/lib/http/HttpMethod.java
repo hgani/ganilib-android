@@ -42,8 +42,10 @@ public enum HttpMethod {
         return PUT;
       case "delete":
         return DELETE;
-      default:
+      case "post":
         return POST;
+      default:
+        return GET;
     }
   }
 
