@@ -2,7 +2,6 @@ package com.gani.lib.http;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 
 final class PostDelegate extends HttpDelegate {
   private static final long serialVersionUID = 1L;
@@ -27,7 +26,7 @@ final class PostDelegate extends HttpDelegate {
     connection.setDoOutput(true);
 
     byte[] data = GHttp.instance().processParams(params, method)
-        .toMutable().put("_method", getMethod()).toImmutable()
+        //.toMutable().put("_method", getMethod()).toImmutable()
         .asQueryString().getBytes("UTF-8");
     connection.getOutputStream().write(data);
     return connection;
