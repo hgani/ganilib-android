@@ -88,8 +88,8 @@ public class GHttpResponse<RR extends GRestResponse> implements Serializable {
 
     this.headers = connection.getHeaderFields().entrySet();
 
-    // Redirection (e.g. 300) should have been handled prior, so we consider anything below 300 a "success".
-    if (code > 300) {
+    // Redirection (e.g. 300) should have been handled prior. 304 should not be considered an error.
+    if (code > 400) {
       GLog.t(getClass(), "HTTP Code: " + code);
       error.markForCode(code);
     }
