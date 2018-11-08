@@ -33,19 +33,19 @@ class PolymorphicEnablingUriMatcher extends NegativeFriendlyUriMatcher {
 
 
 
-  static interface CrudHandler {
+  interface CrudHandler {
     
-    public abstract String getType(Uri uri);
+    String getType(Uri uri);
     
-    public abstract Uri insert(Uri uri, ContentValues values);
+    Uri insert(Uri uri, ContentValues values);
     
-    public abstract Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder);
+    Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder);
     
-    public abstract int update(Uri uri, ContentValues values, String selection, String[] selectionArgs);
+    int update(Uri uri, ContentValues values, String selection, String[] selectionArgs);
 
-    public abstract int delete(Uri uri, String selection, String[] selectionArgs);
+    int delete(Uri uri, String selection, String[] selectionArgs);
     
-    public abstract int bulkInsert(Uri uri, ContentValues[] valuesArray);
+    int bulkInsert(Uri uri, ContentValues[] valuesArray);
 
   }
 }

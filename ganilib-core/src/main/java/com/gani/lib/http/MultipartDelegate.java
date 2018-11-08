@@ -27,7 +27,7 @@ final class MultipartDelegate extends HttpDelegate {
   
   private Map<String, HttpAsyncMultipart.Uploadable> nonNullImmutable(Map<String, HttpAsyncMultipart.Uploadable> uploads) {
     if (uploads == null) {
-    	return Collections.<String, HttpAsyncMultipart.Uploadable>emptyMap();
+    	return Collections.emptyMap();
     }
     return uploads;
   }
@@ -60,7 +60,7 @@ final class MultipartDelegate extends HttpDelegate {
 
     osw.write("--" + MESSAGE_BOUNDARY + "\r\n");
     // Not sure why casting is required.
-    for (Map.Entry<String, Object> entry : (Set<Map.Entry<String, Object>>) params.entrySet()) {
+    for (Map.Entry<String, Object> entry : params.entrySet()) {
       // NOTE: For now we just assume all values are String. We don't support String[].
       osw.write("Content-Disposition: form-data; name=\"" + entry.getKey() + 
           "\"\r\n\r\n" + entry.getValue() + "\r\n--" + MESSAGE_BOUNDARY + "\r\n");

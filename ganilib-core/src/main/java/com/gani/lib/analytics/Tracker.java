@@ -52,7 +52,7 @@ public class Tracker {
   
   public Tracker trackIgnoringRepeats(Event event) {
     String eventId = event.getId();
-    if (!didReorient && !trackedEventIds.contains(eventId)) {
+    if (!didReorient) {
 //      FlurryAgent.logEvent(eventId, event.getParams());
       trackedEventIds.add(eventId);
     }

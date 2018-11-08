@@ -9,7 +9,7 @@ public interface HttpSync<HR extends GHttpResponse> {
   
   
   
-  public static class HttpSyncException extends Exception {
+  class HttpSyncException extends Exception {
     private static final long serialVersionUID = 1L;
     private GHttpError error;
     
@@ -28,7 +28,7 @@ public interface HttpSync<HR extends GHttpResponse> {
   }
 
   // Just a tagging exception.
-  public static class HttpCanceledException extends Exception {
+  class HttpCanceledException extends Exception {
     private static final long serialVersionUID = 1L;
   }
 }

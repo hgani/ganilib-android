@@ -14,7 +14,7 @@ public interface SelectableItem extends Serializable {
 
   
 
-  public class Utils {
+  class Utils {
     private static List<String> collectNames(List<? extends SelectableItem> items) {
       List<String> itemNames = new LinkedList<String>();
       for (SelectableItem item : items) {

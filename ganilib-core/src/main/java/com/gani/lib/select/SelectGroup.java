@@ -12,11 +12,11 @@ public interface SelectGroup extends Serializable {
   String getParamValue();
   String name();
   
-  public interface Tab extends SelectGroup {
+  interface Tab extends SelectGroup {
     int getLabelResId();
   }
   
-  public enum NullTab implements Tab {
+  enum NullTab implements Tab {
     DEFAULT {
       @Override
       public int getLabelResId() {
@@ -45,7 +45,7 @@ public interface SelectGroup extends Serializable {
     }
   }
 
-  public abstract class ViewHelper<T extends SelectGroup.Tab> {
+  abstract class ViewHelper<T extends SelectGroup.Tab> {
     private String bundleKey;
     private TabHelper delegate;
     private View content;

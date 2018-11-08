@@ -28,7 +28,7 @@ class GetDelegate extends HttpDelegate {
   }
   
   @Override
-  protected HttpURLConnection makeConnection() throws MalformedURLException, IOException {
+  protected HttpURLConnection makeConnection() throws IOException {
     return GHttp.instance().openConnection(getFullUrl(), params, method);
   }
 

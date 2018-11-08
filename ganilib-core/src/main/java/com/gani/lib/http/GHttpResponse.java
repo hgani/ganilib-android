@@ -1,12 +1,8 @@
 package com.gani.lib.http;
 
 import com.gani.lib.R;
-import com.gani.lib.json.GJsonObject;
 import com.gani.lib.logging.GLog;
 import com.gani.lib.ui.Ui;
-import com.gani.lib.ui.alert.ToastUtils;
-
-import org.json.JSONException;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -85,6 +81,8 @@ public class GHttpResponse<RR extends GRestResponse> implements Serializable {
   void extractFrom(HttpURLConnection connection) throws IOException {
     int code = connection.getResponseCode();
     setCode(code);
+
+    GLog.e(getClass(), "previous Url: " + connection.getURL());
 
     this.headers = connection.getHeaderFields().entrySet();
 

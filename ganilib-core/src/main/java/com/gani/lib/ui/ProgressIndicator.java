@@ -5,7 +5,7 @@ public interface ProgressIndicator {
   void hideProgress();
 
 
-  public static final ProgressIndicator NULL = new ProgressIndicator() {
+  ProgressIndicator NULL = new ProgressIndicator() {
     @Override
     public void showProgress() {
       // Do nothing

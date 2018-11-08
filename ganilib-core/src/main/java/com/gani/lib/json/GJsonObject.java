@@ -18,8 +18,6 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
-import static android.R.attr.defaultValue;
-
 public abstract class GJsonObject<JO extends GJsonObject, JA extends GJsonArray> {
   protected JSONObject backend;
 
@@ -64,7 +62,7 @@ public abstract class GJsonObject<JO extends GJsonObject, JA extends GJsonArray>
   }
 
   @Nullable
-  public String[] getNullableStringArray(String name) throws JSONException{
+  public String[] getNullableStringArray(String name) {
     try {
 //      JSONArray arr = backend.getJSONArray(name);
 //      String[] elements = new String[arr.length()];

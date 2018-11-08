@@ -42,7 +42,7 @@ public class GWebView extends WebView {
 
     // Mimic turbolinks-android's WebView as much as possible.
     WebSettings webSettings = getSettings();
-//    webSettings.setUserAgentString(ConnectionPreparator.userAgent());
+    //webSettings.setUserAgentString("Chrome 41.0.2228.0");
     webSettings.setJavaScriptEnabled(true);
     webSettings.setDomStorageEnabled(true);
     webSettings.setDatabaseEnabled(true);

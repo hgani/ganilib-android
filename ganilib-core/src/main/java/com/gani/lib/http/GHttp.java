@@ -5,6 +5,7 @@ import android.webkit.WebView;
 
 import com.gani.lib.io.PersistentCookieStore;
 import com.gani.lib.io.WebkitCookieManagerProxy;
+import com.gani.lib.logging.GLog;
 import com.gani.lib.ui.Ui;
 
 import org.json.JSONException;
@@ -32,6 +33,7 @@ public abstract class GHttp<P extends GImmutableParams> {
   }
 
   private static void initPermanentCookieHandler() {
+    GLog.e(GHttp.class, "----------------initialising cookie handler----------------------");
     android.webkit.CookieSyncManager.createInstance(Ui.context());
 
     // Use ACCEPT_ALL instead of ACCEPT_ORIGINAL_SERVER so that it is cross-subdomain.
@@ -68,7 +70,7 @@ public abstract class GHttp<P extends GImmutableParams> {
   public GHttpAlert alertHelper() {
     return new GHttpAlert() {
       @Override
-      public void reportCodeError(GHttpResponse r) throws JSONException {
+      public void reportCodeError(GHttpResponse r) {
 
       }
 
@@ -88,7 +90,7 @@ public abstract class GHttp<P extends GImmutableParams> {
 //      }
 
       @Override
-      public void alertCommonError(Context context, GHttpResponse r) throws JSONException {
+      public void alertCommonError(Context context, GHttpResponse r) {
 
       }
     };

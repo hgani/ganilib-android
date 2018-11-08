@@ -17,7 +17,7 @@ public abstract class GJsonArray<JO extends GJsonObject> implements Iterable<JO>
     this(new JSONArray(str));
   }
 
-  public GJsonArray(JO[] elements) throws JSONException {
+  public GJsonArray(JO[] elements) {
     this.elements = elements;
   }
 

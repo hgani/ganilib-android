@@ -33,8 +33,8 @@ public class GScreenView extends IScreenView {
     super(activity);
 
     this.layout = (ViewGroup) LayoutInflater.from(getContext()).inflate(R.layout.view_screen, this);
-    this.body = (ViewGroup) layout.findViewById(R.id.screen_body);
-    this.drawer = (DrawerLayout) findViewById(R.id.screen_drawer);
+    this.body = layout.findViewById(R.id.screen_body);
+    this.drawer = findViewById(R.id.screen_drawer);
 
     this.activity = activity;
     this.badge = new NavigationHomeBadge(this);
@@ -60,7 +60,7 @@ public class GScreenView extends IScreenView {
 
   protected void initNavigation(boolean topNavigation, ActionBar actionBar) {
     DrawerLayout drawer = getDrawer();
-    NavigationView navView = ((NavigationView) drawer.findViewById(R.id.view_navigation));
+    NavigationView navView = drawer.findViewById(R.id.view_navigation);
 //      this.drawerHeader = navView.inflateHeaderView(R.layout.drawer_header);
 //      updateDrawerHeader();
 

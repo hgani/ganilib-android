@@ -69,7 +69,7 @@ public abstract class ViewBinderItemSelect<I extends SelectableItem, T extends S
           RecyclerView listView = (RecyclerView) activity.findViewById(R.id.list_common);
           for (int i = 0; i < listView.getChildCount(); i++) {
             View itemView = listView.getChildAt(i);
-            CheckBox selectButton = ((CheckBox) itemView.findViewById(R.id.toggle_select));
+            CheckBox selectButton = itemView.findViewById(R.id.toggle_select);
             // selectButton may be null if this is a section header
             if (selectButton != null && selectButton != buttonView) {
               selectButton.setChecked(false);

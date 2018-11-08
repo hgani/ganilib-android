@@ -37,7 +37,7 @@ abstract class HttpDelegate implements Serializable {
 
   protected abstract String getFullUrl();
 
-  protected abstract HttpURLConnection makeConnection() throws MalformedURLException, IOException;
+  protected abstract HttpURLConnection makeConnection() throws IOException;
 
   protected abstract String getMethod();
 
@@ -88,7 +88,7 @@ abstract class HttpDelegate implements Serializable {
         responseCode == HttpURLConnection.HTTP_MOVED_TEMP;
   }
 
-  private HttpURLConnection makeRedirectConnection() throws MalformedURLException, IOException {
+  private HttpURLConnection makeRedirectConnection() throws IOException {
     String redirectUrl = connection.getHeaderField("Location");
     GLog.d(getClass(), "Redirected to url: " + redirectUrl);
     return GHttp.instance().openConnection(redirectUrl, GImmutableParams.EMPTY, HttpMethod.GET);

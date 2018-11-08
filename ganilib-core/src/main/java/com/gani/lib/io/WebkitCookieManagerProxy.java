@@ -28,8 +28,7 @@ public class WebkitCookieManagerProxy extends CookieManager
     }
 
     @Override
-    public void put(URI uri, Map<String, List<String>> responseHeaders) throws IOException 
-    {
+    public void put(URI uri, Map<String, List<String>> responseHeaders) {
         // make sure our args are valid
         if ((uri == null) || (responseHeaders == null)) return;
 
@@ -51,8 +50,7 @@ public class WebkitCookieManagerProxy extends CookieManager
     }
 
     @Override
-    public Map<String, List<String>> get(URI uri, Map<String, List<String>> requestHeaders) throws IOException 
-    {
+    public Map<String, List<String>> get(URI uri, Map<String, List<String>> requestHeaders) {
         // make sure our args are valid
         if ((uri == null) || (requestHeaders == null)) throw new IllegalArgumentException("Argument is null");
 
