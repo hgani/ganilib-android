@@ -1,8 +1,5 @@
 package com.gani.lib.io;
 
-import com.gani.lib.logging.GLog;
-
-import java.io.IOException;
 import java.net.CookieManager;
 import java.net.CookiePolicy;
 import java.net.CookieStore;

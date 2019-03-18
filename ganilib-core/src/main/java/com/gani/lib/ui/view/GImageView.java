@@ -6,10 +6,7 @@ import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 
 import com.bumptech.glide.Glide;
-import com.gani.lib.R;
 import com.gani.lib.ui.Ui;
-
-import static android.R.attr.width;
 
 public class GImageView extends AppCompatImageView {
   private ViewHelper helper;

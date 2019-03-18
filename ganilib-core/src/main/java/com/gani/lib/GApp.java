@@ -3,17 +3,13 @@ package com.gani.lib;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.content.res.Resources;
 import android.os.Handler;
 import android.provider.Settings;
 
 import com.gani.lib.collection.SelfTruncatingSet;
-import com.gani.lib.http.GHttp;
 import com.gani.lib.ui.Ui;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
-import static android.R.attr.versionName;
 
 public abstract class GApp {
   private static GApp instance;

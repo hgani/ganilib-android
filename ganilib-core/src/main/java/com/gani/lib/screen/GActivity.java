@@ -1,17 +1,10 @@
 package com.gani.lib.screen;
 
-import android.Manifest;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -31,15 +24,9 @@ import com.gani.lib.model.GBundle;
 import com.gani.lib.ui.ProgressIndicator;
 import com.gani.lib.ui.Ui;
 import com.gani.lib.utils.LocationManager;
-import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 
 import java.io.Serializable;
 import java.util.List;
-
-import static android.R.attr.permission;
 
 public class GActivity extends AppCompatActivity implements RichContainer {
   protected Tracker tracker;

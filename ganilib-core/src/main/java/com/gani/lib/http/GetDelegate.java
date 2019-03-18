@@ -2,7 +2,6 @@ package com.gani.lib.http;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 
 
 class GetDelegate extends HttpDelegate {

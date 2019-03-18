@@ -3,7 +3,6 @@ package com.gani.lib.http;
 import android.net.Uri;
 
 import com.gani.lib.json.GJsonObject;
-import com.gani.lib.logging.GLog;
 
 import java.io.Serializable;
 import java.util.HashMap;

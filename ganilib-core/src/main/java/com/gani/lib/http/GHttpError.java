@@ -1,10 +1,6 @@
 package com.gani.lib.http;
 
-import android.content.Context;
-
-import com.gani.lib.json.GJsonObject;
 import com.gani.lib.logging.GLog;
-import com.gani.lib.ui.alert.ToastUtils;
 
 import org.json.JSONException;
 

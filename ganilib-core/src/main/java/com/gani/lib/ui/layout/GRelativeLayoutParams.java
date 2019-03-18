@@ -1,11 +1,8 @@
 package com.gani.lib.ui.layout;
 
-import android.text.Layout;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-
-import com.gani.lib.ui.style.Length;
 
 public class GRelativeLayoutParams<T extends View> extends RelativeLayout.LayoutParams {
   private T view;

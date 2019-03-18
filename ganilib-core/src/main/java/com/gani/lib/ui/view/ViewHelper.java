@@ -10,8 +10,6 @@ import com.gani.lib.ui.Ui;
 import com.gani.lib.ui.layout.GRelativeLayoutParams;
 import com.gani.lib.ui.style.Length;
 
-import static android.R.attr.width;
-
 public class ViewHelper {
   private View view;
 

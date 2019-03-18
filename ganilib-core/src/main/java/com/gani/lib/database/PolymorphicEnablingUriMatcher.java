@@ -7,8 +7,6 @@ import android.net.Uri;
 import java.util.HashMap;
 import java.util.Map;
 
-import static android.content.UriMatcher.NO_MATCH;
-
 class PolymorphicEnablingUriMatcher extends NegativeFriendlyUriMatcher {
   private int code = 0;
   private Map<Integer, CrudHandler> codeToCrudHandlerMap = new HashMap<Integer, CrudHandler>();

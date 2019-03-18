@@ -2,18 +2,11 @@ package com.gani.lib.ui.layout;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.v4.view.ViewCompat;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.gani.lib.R;
 import com.gani.lib.ui.Ui;
 import com.gani.lib.ui.view.ViewHelper;
-
-import static android.R.attr.button;
-import static android.R.attr.width;
 
 public class GRelativeLayout<T extends GRelativeLayout> extends RelativeLayout {
   private ViewHelper helper;

@@ -1,9 +1,5 @@
 package com.gani.lib.select;
 
-import android.database.Cursor;
-import android.support.v4.app.LoaderManager;
-import android.support.v4.content.Loader;
-
 import com.gani.lib.http.HttpAsyncGet;
 import com.gani.lib.io.ResourceCloser;
 import com.gani.lib.ui.list.DbCursorRecyclerAdapter;

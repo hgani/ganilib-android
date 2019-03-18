@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.gani.lib.R;
-import com.gani.lib.logging.GLog;
-import com.gani.lib.model.GBundle;
 import com.gani.lib.screen.GActivity;
 import com.gani.lib.ui.ProgressIndicator;
 

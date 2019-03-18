@@ -1,7 +1,5 @@
 package com.gani.lib.http;
 
-import org.json.JSONException;
-
 import java.io.Serializable;
 
 

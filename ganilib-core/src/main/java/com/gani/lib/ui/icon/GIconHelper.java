@@ -5,7 +5,6 @@ import com.gani.lib.ui.Ui;
 import com.joanzapata.iconify.Icon;
 import com.joanzapata.iconify.IconDrawable;
 import com.joanzapata.iconify.IconFontDescriptor;
-import com.joanzapata.iconify.Iconify;
 
 import java.util.HashMap;
 import java.util.LinkedList;

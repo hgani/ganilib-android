@@ -8,8 +8,6 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Handler;
 
-import com.gani.lib.logging.GLog;
-
 public class Ui {
   private static Context appContext;
   private static Resources resources;

@@ -6,10 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-//import com.clsreview.clsreview.R;
 import com.gani.lib.ui.layout.AbstractHorizontalLayout;
 import com.gani.lib.ui.layout.VerticalLayout;
 import com.gani.lib.ui.view.GTextView;
+
+//import com.clsreview.clsreview.R;
 
 public abstract class FormField extends AbstractHorizontalLayout<FormField> {
   private TextView label;

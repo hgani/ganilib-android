@@ -6,11 +6,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Collections;
 import java.util.Map;
-import java.util.Set;
 
 final class MultipartDelegate extends HttpDelegate {
   private static final String MESSAGE_BOUNDARY = "----------V2ymHFg03ehbqgZCaKO6jy";

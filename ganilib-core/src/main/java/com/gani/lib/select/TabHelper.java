@@ -4,12 +4,10 @@ import android.database.ContentObserver;
 import android.os.Build;
 import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TabHost;
 import android.widget.TextView;
 
-import com.gani.lib.R;
 import com.gani.lib.database.GDbTable;
 import com.gani.lib.ui.Ui;
 

@@ -2,23 +2,15 @@ package com.gani.lib.ui.view;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.util.AttributeSet;
-import android.view.MotionEvent;
-import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.gani.lib.http.GHttp;
 import com.gani.lib.http.GImmutableParams;
 import com.gani.lib.logging.GLog;
-import com.gani.lib.screen.GFragment;
 import com.gani.lib.ui.ProgressIndicator;
-
-import static android.R.attr.fragment;
-import static org.jsoup.nodes.Document.OutputSettings.Syntax.html;
 
 public class GWebView extends WebView {
   private ViewHelper helper;
