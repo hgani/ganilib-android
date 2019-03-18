@@ -103,6 +103,10 @@ public class Ui {
     uiHandler.postDelayed(command, delayInMillis);
   }
 
+  public static void cancel(Runnable command) {
+    uiHandler.removeCallbacks(command);
+  }
+
   public static Typeface ttf(String ttf) {
     return Typeface.createFromAsset(appContext.getAssets(), ttf);
   }
