@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
 
-  <android.support.v4.widget.DrawerLayout
+  <androidx.drawerlayout.widget.DrawerLayout
       xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto"
       android:id="@+id/screen_drawer"
@@ -19,7 +19,7 @@
         See http://www.android4devs.com/2014/12/how-to-make-material-design-app.html
         -->
       <!-- NOTE: Elevation only works on 5.0 or above. See http://stackoverflow.com/questions/26575197/no-shadow-by-default-on-toolbar -->
-      <android.support.v7.widget.Toolbar android:id="@+id/screen_toolbar"
+      <androidx.appcompat.widget.Toolbar android:id="@+id/screen_toolbar"
                                          android:layout_width="match_parent"
                                          android:layout_height="?attr/actionBarSize"
                                          android:background="?attr/colorPrimary"
@@ -80,7 +80,7 @@
           -->
     </LinearLayout>
 
-    <android.support.design.widget.NavigationView
+    <com.google.android.material.navigation.NavigationView
         android:id="@+id/view_navigation"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -88,6 +88,6 @@
     <!--
         app:headerLayout="@layout/drawer_header"/>
 -->
-  </android.support.v4.widget.DrawerLayout>
+  </androidx.drawerlayout.widget.DrawerLayout>
 
 </merge>

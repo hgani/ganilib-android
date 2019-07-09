@@ -1,7 +1,7 @@
 package com.gani.lib.ui.list;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.ViewGroup;
 
 import com.gani.lib.R;

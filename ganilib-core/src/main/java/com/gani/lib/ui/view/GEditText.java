@@ -1,7 +1,7 @@
 package com.gani.lib.ui.view;
 
 import android.content.Context;
-import android.support.v7.widget.AppCompatEditText;
+import androidx.appcompat.widget.AppCompatEditText;
 import android.util.AttributeSet;
 
 public class GEditText<T extends GEditText> extends AppCompatEditText implements GView {

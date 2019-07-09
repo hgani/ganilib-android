@@ -1,7 +1,7 @@
 package com.gani.lib.ui.list;
 
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class RecyclerListHelper {
   private RecyclerView recyclerView;

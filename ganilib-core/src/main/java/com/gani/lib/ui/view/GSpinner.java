@@ -2,8 +2,8 @@ package com.gani.lib.ui.view;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.widget.AppCompatSpinner;
+import androidx.core.view.ViewCompat;
+import androidx.appcompat.widget.AppCompatSpinner;
 import android.util.AttributeSet;
 import android.widget.SpinnerAdapter;
 
