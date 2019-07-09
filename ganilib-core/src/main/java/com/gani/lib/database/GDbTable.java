@@ -5,7 +5,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.provider.BaseColumns;
-import android.support.v4.content.CursorLoader;
+
+import androidx.loader.content.CursorLoader;
 
 import com.gani.lib.ui.Ui;
 

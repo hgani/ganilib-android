@@ -1,10 +1,11 @@
 package com.gani.lib.ui.view.pager;
 
 import android.content.Context;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.View;
+
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import com.gani.lib.ui.Ui;
 import com.gani.lib.ui.view.ViewHelper;
@@ -43,7 +44,7 @@ public class GWrapHeightViewPager extends ViewPager {
     for (int i = 0; i < getChildCount(); i++) {
       View child = getChildAt(i);
 
-      child.measure(widthMeasureSpec, View.MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED));
+      child.measure(widthMeasureSpec, View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED));
 
       int h = child.getMeasuredHeight();
 

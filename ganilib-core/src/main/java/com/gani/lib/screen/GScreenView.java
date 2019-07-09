@@ -2,18 +2,19 @@ package com.gani.lib.screen;
 
 import android.content.Intent;
 import android.os.Bundle;
-import com.google.android.material.navigation.NavigationView;
-import androidx.core.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
 import com.gani.lib.R;
 import com.gani.lib.ui.icon.GIcon;
+import com.google.android.material.navigation.NavigationView;
 
 
 public class GScreenView extends IScreenView {
