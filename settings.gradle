@@ -1,1 +1,1 @@
-include ':ganilib-core', ':ganilib-web', ':ganilib-map'
+include ':ganilib-core'
