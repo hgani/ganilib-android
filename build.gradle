@@ -12,7 +12,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.0'
+        classpath 'com.android.tools.build:gradle:4.0.2'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -32,19 +32,15 @@ allprojects {
 }
 
 subprojects {
-    afterEvaluate { project ->
-        if (project.plugins.hasPlugin('com.android.library')) {
-            apply plugin: 'maven-publish'
+    plugins.withId('com.android.library') {
 
-            publishing {
-                publications {
-                    release(MavenPublication) {
-                        from components.release
+        publishing {
+            publications {
+                release(MavenPublication) {
 
-                        groupId = 'com.github.hgani.ganilib-android'
-                        // Artifact ID will be the module's name (e.g., 'ganilib-web')
-                        artifactId = project.name
-                    }
+                    groupId = 'com.github.hgani.ganilib-android'
+                    // Artifact ID will be the module's name (e.g., 'ganilib-web')
+                    artifactId = project.name
                 }
             }
         }
