@@ -1,4 +1,5 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'maven-publish'
 
 buildscript {
     ext.kotlin_version = '1.3.21'
@@ -13,8 +14,6 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.0'
         // To enable multi-module jitpack. See https://android.jlelse.eu/publish-multi-module-android-libraries-on-jitpack-339213f6224c
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
-
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -30,5 +29,21 @@ allprojects {
             name 'Google'
         }
         maven { url "https://jitpack.io" }
+    }
+}
+
+subprojects {
+    plugins.withId('com.android.library') {
+
+        publishing {
+            publications {
+                release(MavenPublication) {
+
+                    groupId = 'com.github.hgani.ganilib-android'
+                    // Artifact ID will be the module's name (e.g., 'ganilib-web')
+                    artifactId = project.name
+                }
+            }
+        }
     }
 }
