@@ -1,18 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven-publish'
-
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                groupId = 'com.github.hgani'
-                artifactId = 'ganilib-android'
-            }
-        }
-    }
-}
 
 android {
     compileSdkVersion 26
