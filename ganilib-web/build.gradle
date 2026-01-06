@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion 26
@@ -39,4 +40,15 @@ dependencies {
     compile 'com.basecamp:turbolinks:1.0.7'
 
     compile project(':ganilib-core')
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = 'com.github.hgani'
+                artifactId = 'ganilib-android'
+            }
+        }
+    }
 }
